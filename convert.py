@@ -26,7 +26,7 @@ def pushover(message):
 #/mnt/storage/shared/Captures/Raw/002.dv 
 #/mnt/external/media/Library/Home Videos/002.m4v
 def convert(in_path, out_path):
-    command = 'HandBrakeCLI --preset-import-file ./home.json -Z "HomeVideo" -i "%s" -o "%s"' % (in_path, out_path)
+    command = 'HandBrakeCLI --preset-import-file ./8mm.json -Z "8mm" -i "%s" -o "%s"' % (in_path, out_path)
     #result = subprocess.call(command, shell=True)
     #result = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
     #proc = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) 
