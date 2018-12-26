@@ -3,7 +3,8 @@
     {
       "AlignAVStart" : false,
       "AudioCopyMask" : [
-        "copy:aac"
+        "copy:aac",
+        "copy:ac3"
       ],
       "AudioEncoderFallback" : "ca_aac",
       "AudioLanguageList" : [
@@ -11,11 +12,24 @@
       ],
       "AudioList" : [
         {
-          "AudioBitrate" : 128,
+          "AudioBitrate" : 160,
           "AudioCompressionLevel" : -1,
           "AudioDitherMethod" : "auto",
           "AudioEncoder" : "ca_aac",
-          "AudioMixdown" : "mono",
+          "AudioMixdown" : "dpl2",
+          "AudioNormalizeMixLevel" : false,
+          "AudioSamplerate" : "auto",
+          "AudioTrackDRCSlider" : 0,
+          "AudioTrackGainSlider" : 0,
+          "AudioTrackQuality" : -1,
+          "AudioTrackQualityEnable" : false
+        },
+        {
+          "AudioBitrate" : 224,
+          "AudioCompressionLevel" : -1,
+          "AudioDitherMethod" : "auto",
+          "AudioEncoder" : "copy:ac3",
+          "AudioMixdown" : "5point1",
           "AudioNormalizeMixLevel" : false,
           "AudioSamplerate" : "auto",
           "AudioTrackDRCSlider" : 0,
@@ -109,7 +123,7 @@
       "x264UseAdvancedOptions" : false
     }
   ],
-  "VersionMajor" : 34,
+  "VersionMajor" : 32,
   "VersionMicro" : 0,
   "VersionMinor" : 0
 }
